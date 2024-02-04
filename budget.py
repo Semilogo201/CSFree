@@ -6,9 +6,10 @@ while True:
     print("2. Add expenses")
     print("3. current balance")
     print("4. Exit")
-
-    choice = int(input("Enter your choice (1-4): "))
-
+    try:
+        choice = int(input("Enter your choice (1-4): "))
+    except ValueError:
+        print("Invalid input. Please enter a valid number: ")
     if choice == 1:
         income_amount = float(input("Enter your income"))
         balance += income_amount
