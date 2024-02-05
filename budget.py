@@ -11,11 +11,11 @@ while True:
     except ValueError:
         print("Invalid input. Please enter a valid number: ")
     if choice == 1:
-        income_amount = float(input("Enter your income"))
+        income_amount = float(input("Enter your income: "))
         balance += income_amount
         print(f"income of $ {income_amount} added. updated balance: ${balance}")
     elif choice == 2:
-        expense_amount = float(input("Enter your expenses"))
+        expense_amount = float(input("Enter your expenses:"))
         balance -= expense_amount
         print(f"expense of $ {expense_amount} deducted. ")
     elif choice == 3:
