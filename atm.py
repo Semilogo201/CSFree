@@ -10,8 +10,10 @@ while True: #entering a continous loop and presenting a menu to the user for the
      print("2. Deposit")
      print("3. Exit")
      
+
      options = int(input("Enter your option (1-3): "))
-print("Invalid input. please enter a valid option: ")
+     
+     print("Invalid input. please enter a valid option: ")
 if options == 1:
    withdrawal = float(input("Enter withdrawal amount: "))
    print(f"Withdrawal amount is {withdrawal}")
