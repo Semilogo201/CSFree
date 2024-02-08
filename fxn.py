@@ -12,10 +12,10 @@ age = 2024 - yob
 
 print(f"{name}, you are {age} years old")
 #creating a user def function of the above
-def age_calculator(name, yob, current_year):#parameters(placeholders)
+def age_calculator(name, yob, current_year) :#parameters(placeholders)
     name = "Owolabi Oluwasemilogo"
 yob = 1956
-age = current_year - yob
+#age = current_year - yob
 print(f"{name}, you are {age} years old")
 #calling the function(parameters to the function is ())
 #They are called positional arguement 

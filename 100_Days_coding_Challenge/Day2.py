@@ -40,10 +40,39 @@
 # print(str(70) + str(100))
 
 #coding exercise
-two_digit_number = input()
+# two_digit_number = input()
+# # 🚨 Don't change the code above 👆
+# #solution
+# print(type(two_digit_number))
+# first_digit = int(two_digit_number[0])
+# second_digit = int(two_digit_number[1])
+# print(int(first_digit + second_digit))
+
+#division in python will always give a floating point number
+print(type(6 / 2))
+print(2 ** 2)#this means 2 the power of 3
+print(3 * 8)
+print(4 - 1)
+
+#P.E.M.D.A.S.L.R (Parentheses(), Exponents**, Multiplication*, Division/, Addition+, Subtraction-, The calculation goes from left to right)
+print(3*3+3/3-3) 
+#changing the above line of code so i can get 3 as the output
+print(3*(3+3)/3-3)
+
+#Working on a B.M.I Calculator
+# 1st input: enter height in meters e.g: 1.65
+height = input()
+# 2nd input: enter weight in kilograms e.g: 72
+weight = input()
 # 🚨 Don't change the code above 👆
-#solution
-print(type(two_digit_number))
-first_digit = int(two_digit_number[0])
-second_digit = int(two_digit_number[1])
-print(int(first_digit + second_digit))
+
+# Write your code below this line 👇
+H = float(height)
+W = int(weight)
+BMI = (W/H*H)
+print = int(BMI)
+#another way of solving it
+H = float(height)
+W = int(weight)
+BMI = (W/H**2)
+print = int(BMI)
