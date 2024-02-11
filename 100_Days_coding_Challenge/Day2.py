@@ -69,10 +69,34 @@ weight = input()
 # Write your code below this line 👇
 H = float(height)
 W = int(weight)
-BMI = (W/H*H)
-print = int(BMI)
+bmi = W/(H*H)
+print = int(bmi)
 #another way of solving it
-H = float(height)
-W = int(weight)
-BMI = (W/H**2)
-print = int(BMI)
+height = float(height)
+weight = int(weight)
+bmi = (weight / (height*height))
+print(int(bmi))
+
+#to round up numbers in pytthon
+print(round(8/3, 2))#we are planning to round it up to 2d.p this way
+print(8//3)#when you want an integer not a floating point number
+
+#variable declaration, variable initialization $ increment or decrement
+score = 0
+
+#user scores a point
+score = score + 1
+score += 1
+
+print(score)
+print("your score is " + str(score))#instead of lots of plus sighs
+#you use the f string
+print("your score is {score}")
+
+#calculating the number of years we have in our lifetime
+age = input()
+years = 90 - int(age)
+weeks = years * 52
+print(f"You have {weeks} left.")
+
+
