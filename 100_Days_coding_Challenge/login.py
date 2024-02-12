@@ -10,7 +10,7 @@ isuser_loggedin = False
 
 while True:
     choice = input("Do you want to sign up or sign in: ")
-    
+
     if choice == "sign up":
         name = input("please enter your name: ")
         username = input("Enter your desired username: ")
