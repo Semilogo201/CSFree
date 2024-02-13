@@ -26,11 +26,20 @@
 class Cristal:
     #pass no error, just passover the empty class crystal
     color = "Blue" #an attribute is simply creating a variable in classes
-#method:a function used in a class (the behaviour of the object)
-def write (self): #a user defined function,self(an object you are yet to create)
-    print("Hey! I am writing")
+    def __init__(self):#magic metd(donda metd have double -- before and after)
+        print("You just created an object")
+    #method:a function used in a class (the behaviour of the object)
+def write(self): #a user defined function,self(an object you are yet to create)
+    print("Hey! I am writing") #26-31 is just a template,it won't output anything to the console
 #to use a method, there must be a an object and this object is an instance of the class(an object created from a class)
 #a placeholder must be passed in def write (----)
 #Instantiation(creating an instance of the class => object)
 first_pen = Cristal()
-first_pen.write()#if we want first pen to write, we add . and the name of the function write
+#if we want first pen to write, we add . and the name of the function write
+first_pen.write()
+#to access the attribute
+print(f"Color of first pen is {first_pen.color}")
+
+#creating another instance of our class
+second_pen = Cristal()
+print(f"Color of second pen is {second_pen.color}")
