@@ -45,4 +45,4 @@ print(f"id of first pen is {first_pen.id}")
 #creating another instance of our class
 second_pen = Cristal(id="sl-02")
 print(f"Color of second pen is {second_pen.color}")
-print(f"id of second pen is {second_pen.id}")
+# print(f"id of second pen is {second_pen.id}")
