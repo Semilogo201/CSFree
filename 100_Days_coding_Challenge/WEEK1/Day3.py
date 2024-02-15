@@ -8,18 +8,24 @@ else:
   #A program that replaces a ticket box
     print("Welcome to the rollercoaster")
     height = int(input("What is your height? "))
-
+    bill = 0
     if height > 120:
         print("you can ride the rollercoaster!")
  #Nested if/else statement
         age = int(input("What is your age? "))
         if age < 12:
-            print("Please pay $5.00")
+            bill = 5
+            print("child's ticket is 5")
         elif age <= 18:
-            print("Please pay $7.00")
+           bill = 7
+           print("Youth ticket is 7")
         else:
-            print("Please pay $12.00")
-
+            bill = 12
+            print("Adult ticket is 12")
+        photo = (input("Would you like to take photos with your ticket? y/n: "))
+        if photo == 'y':
+          bill = bill + 3 #or bill+= 3
+        print(f"Your final bill is {bill}")
     else:
         print("you can't ride")
     #comparison operator(<,>,>=,<=,==,!=)
@@ -132,3 +138,30 @@ elif age <= 60:
     print("Your ticket fee is $20")
 else:
     print("Your ticket fee is $10")
+
+#Building an Automatic Pizza Order
+
+print("Thank you for choosing Python Pizza Deliveries!")
+size = input() # What size pizza do you want? S, M, or L
+add_pepperoni = input() # Do you want pepperoni? Y or N
+extra_cheese = input() # Do you want extra cheese? Y or N
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+price = 0
+size = input("What size of pizza will you like to order?, S,M,L: ")
+add_pepperoni = input("Would you like some pepperoni? Y/N: ")
+extra_cheese = input("and some extra cheese? Y/N: ")
+if size == 'S':
+    price += 15
+elif size == 'M':
+    price += 20
+else:
+    price += 25
+    if add_pepperoni == 'Y':
+        if size == 'S':
+            price += 2
+    else:
+         price += 3
+    if extra_cheese == 'Y':
+        price += 1
+print(f"Your final price is: ${price}.")
