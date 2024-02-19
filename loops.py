@@ -15,7 +15,7 @@ while True:
     elif not any(char.isdigit()for char in password):
         print("password must contain at least one digit")
     elif not any(char in "!@$%^&*()" for char in password):
-        print(password must contain at least one special character):
+        print("password must contain at least one special character")
     else:
         print("password is correct")
         break

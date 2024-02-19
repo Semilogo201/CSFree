@@ -143,49 +143,72 @@
 
 # #Building an Automatic Pizza Order
 
-print("Thank you for choosing Python Pizza Deliveries!")
-bill = 0
-size = input("What size of pizza will you like to order?, S,M,L: ")
-add_pepperoni = input("Would you like some pepperoni? Y/N: ")
-extra_cheese = input("and some extra cheese? Y/N: ")
-if size == 'S':
-    bill += 15
-elif size == 'M':
-    bill += 20
-else:
-    bill += 25
-if add_pepperoni == 'Y':
-    if size == 'S':
-        bill += 2
-    else:
-        bill += 3
-if extra_cheese == 'Y':
-    bill += 1
-print(f"Your final bill is: ${bill}.")
+# print("Thank you for choosing Python Pizza Deliveries!")
+# bill = 0
+# size = input("What size of pizza will you like to order?, S,M,L: ")
+# add_pepperoni = input("Would you like some pepperoni? Y/N: ")
+# extra_cheese = input("and some extra cheese? Y/N: ")
+# if size == 'S':
+#     bill += 15
+# elif size == 'M':
+#     bill += 20
+# else:
+#     bill += 25
+# if add_pepperoni == 'Y':
+#     if size == 'S':
+#         bill += 2
+#     else:
+#         bill += 3
+# if extra_cheese == 'Y':
+#     bill += 1
+# print(f"Your final bill is: ${bill}.")
 
-#logical operators (and: the two conditions have to be true, Or: at least one condition has to be true,)
-print("The Love Calculator is calculating your score...")
-name1 = input() # What is your name?
-name2 = input() # What is their name?
-# 🚨 Don't change the code above 👆
-# Write your code below this line 👇
-names = name1 + name2
-Lnames = names.lower()
-t = Lnames.count("t")
-r = Lnames.count("r")
-u = Lnames.count("u")
-e = Lnames.count("e")
-first_digit = t+r+u+e
-l = Lnames.count("l")
-o = Lnames.count("o")
-v = Lnames.count("v")
-e = Lnames.count("e")
-second_digit = l+o+v+e
-score =  int(str(first_digit) + str(second_digit))
-if (score < 10) or (score > 90):
-    print("Your score is {score}, you go together like coke and mantos.")
-elif (score >= 40) and (score <= 50):
-    print("Your score is {score}, you are alright together.")
+# #logical operators (and: the two conditions have to be true, Or: at least one condition has to be true,)
+# print("The Love Calculator is calculating your score...")
+# name1 = input() # What is your name?
+# name2 = input() # What is their name?
+# # 🚨 Don't change the code above 👆
+# # Write your code below this line 👇
+# names = name1 + name2
+# Lnames = names.lower()
+# t = Lnames.count("t")
+# r = Lnames.count("r")
+# u = Lnames.count("u")
+# e = Lnames.count("e")
+# first_digit = t+r+u+e
+# l = Lnames.count("l")
+# o = Lnames.count("o")
+# v = Lnames.count("v")
+# e = Lnames.count("e")
+# second_digit = l+o+v+e
+# score =  int(str(first_digit) + str(second_digit))
+# if (score < 10) or (score > 90):
+#     print(f"Your score is {score}, you go together like coke and mentos.")
+# elif (score >= 40) and (score <= 50):
+#     print(f"Your score is {score}, you are alright together.")
+# else:
+#     print(f"Your score is {score}.")
+
+#working on a treasure island game
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+choice1 = input("You\'re at a cross road, where will you like to go, 'left' or 'right'? ").lower()
+
+if choice1 == 'left':
+    #Continue in the game.
+    choice2 = input("You\'ve come to a lake. There is an island in the middle of the lake. type 'wait' to wait for a boat. type 'swim' to swim across").lower()
+    if choice2 == 'wait':
+        choice3 = input("You arrive at the island unharmed. There is a house with 3 doors.One red, one yellow, one blue Which color do you choose?").lower()
+    #game will continue
+        if choice3 == 'red':
+            print("it is a room full of fire. game over.")
+        elif choice3 == 'yellow':
+            print("you found the tresure, you win")
+        elif choice3 == 'blue':
+            print("you entered a room of beast. game over.")
+        else:
+            print("you chose a door that doesnt exist. game over")
+    else:
+        print("you get attacked by an angry trout. game over")
 else:
-    print(f"Your score is {score}.")
-    
+    print("Game Over.")
