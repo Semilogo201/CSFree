@@ -253,13 +253,62 @@
 # my_func('Brazil')
 # my_func()
 
-#passing a list as an arguement
-def lst(food):
-    for x in food:
-        print(x)
+# #passing a list as an arguement
+# def lst(fruits):
+#     for x in fruits:
+#         print(x)
 
-fruits = ["apple", "banana", "orange"]
-lst(fruits)
+# fruits = ["apple", "banana", "orange"]
+# lst(fruits)
+
+# #to let a fxn return a value
+# def ret(x):
+#     return(5*x)
+
+# print(ret(3))
+# print(ret(5))
+# print(ret(9))
+
+# #to combine positional arg with keyword arg
+# #Any argument before the / , are positional-only, and any argument after the *, are keyword-only.
+# def my(a,b,/,*,c,d):
+#     print(a+b+c+d)
+# my(5,6, c=7, d=8)
+
+# #recursion(a defined function can call itself.)
+# def tri_recursion(k):
+#     if(k>0):
+#         result = k + tri_recursion(k-1)
+#     else:
+#         result = 0
+#         return result
+    
+# print("\n\nRecursion Example Results")
+# tri_recursion(6)
+
+# #python lambda(it is a small anonymous fxn, can take any number of arguements but only one expression)
+# #lambda arguments : expression(The expression is executed and the result is returned)
+# #Add 10 to argument a, and return the result:
+
+# x = lambda a : a + 10
+# print(x(5))
+
+# # Multiply argument a with argument b and return the result:
+
+# x = lambda a, b : a * b
+# print(x(5, 6))
+
+#using lambda with a user defined fxn
+def myfc(n):
+    return lambda a: a*n
+mydoubler = myfc(2)
+print(mydoubler(11))
+mytriple = myfc(3)
+print(mytriple(11))
+
+
+
+
 
 
 
